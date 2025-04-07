@@ -22,5 +22,5 @@ docker build -t ubuntu:Dockerfile1 .
 docker image ls
 ```
 ```
-docker run -it --name ct3 ubuntu:Dockerfile
+docker run -it --name ct30 ubuntu:Dockerfile
 ```
