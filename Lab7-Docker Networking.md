@@ -129,6 +129,13 @@ apt install inetutils-ping
 ```
 ping 8.8.8.8
 ```
+```
+apt install -y iproute2
+```
+```
+ip addr
+```
+Verify the Private Ip
 Also if you check the default port 80, the container would be accessible although we have not published the container since the default port for an nginx web-server is 80
 
 Press Ctrl+P+Q, to switch back to Host
