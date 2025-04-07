@@ -107,10 +107,6 @@ docker network connect bridge ct3
 ```
 docker network inspect the bridge
 ```
-Also to check the network connection to the outside world we can run the below commands
-```
-ping 8.8.8.8
-```
 
 ### Task 4: Launch a container to host network
 ```
@@ -139,11 +135,7 @@ Press Ctrl+P+Q, to switch back to Host
 ```
 docker network inspect host
 ```
-You can have multiple containers in the same host network only if they are not using the same port
-```
-docker run -d --network host python:3 sh -c "python -m http.server 3000"
-```
-`python -m http.server 3000` is used to start a simple HTTP server in Python
+
 
 
 ### Task 5: Launch a container to none network 
