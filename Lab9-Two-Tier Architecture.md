@@ -32,7 +32,6 @@ CMD ["/usr/sbin/apache2ctl","-D","FOREGROUND"]
 
 #End of Dockerfile
 ```
-You can download the above Dockerfile from S3 using - wget https://hpe-content.s3.ap-south-1.amazonaws.com/Dockerfile
 ```
 docker build -t ct-wordpress:v1 .
 ```
