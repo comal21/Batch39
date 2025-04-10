@@ -25,7 +25,7 @@ spec:
 
 ## Apply the Pod definition using the command:
 ```
-kubectl create -f httpd-pod.yaml
+kubectl apply -f httpd-pod.yaml
 ```
 
 ## Check the newly created Pod
