@@ -51,7 +51,7 @@ spec:
  ```
 # Apply the pod definition yaml
  ```
-kubectl create -f httpd-pod.yaml
+kubectl apply -f httpd-pod.yaml
  ```
  
 # Check the newly created Pod
