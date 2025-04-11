@@ -85,6 +85,7 @@ kubectl rollout undo deployment/nginx-dep --to-revision=1
 ```
 kubectl describe pod podname
 ```
+```
 exit
 ```
 ------------------------------------------------------------------------------
