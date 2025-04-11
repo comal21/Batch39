@@ -81,19 +81,9 @@ kubectl rollout history deployment/nginx-dep
 ```
 kubectl rollout undo deployment/nginx-dep --to-revision=1
 ```
-## View the Replica Set and access one of the Pods and view nginx version
+## View the pod details
 ```
-kubectl get rs
-```
-```
-kubectl get pods
-```
-```
-kubectl exec -it <pod_name> -- /bin/bash
-```
-```
-nginx -v
-```
+kubectl describe pod podname
 ```
 exit
 ```
