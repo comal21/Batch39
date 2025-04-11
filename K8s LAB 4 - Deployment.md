@@ -65,18 +65,9 @@ kubectl set image deployment/nginx-dep nginx-ctr=nginx:1.11 --record
 ```
 kubectl describe deployments
 ```
-## Access one of the Pods and view nginx version
+## View the pod details
 ```
-kubectl get pods
-```
-```
-kubectl exec -it <pod_name> -- /bin/bash
-```
-```
-nginx -v
-```
-```
-exit
+kubectl describe pod podname
 ```
 -----------------------------------------------------------------------------
 # Task 3: Rollback of Deployment 
