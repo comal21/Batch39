@@ -47,18 +47,9 @@ kubectl get deployments
 ```
 kubectl get rs
 ```
-## Access one of the Pods and view nginx version
+## View the pod details
 ```
-kubectl get pods
-```
-```
-kubectl exec -it <pod_name> -- /bin/bash
-```
-```
-nginx -v
-```
-```
-exit
+kubectl describe pod podname
 ```
 
 -------------------------------------------------------------------------
