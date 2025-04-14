@@ -73,6 +73,9 @@ cd /usr/share/nginx/html/
 ```
 ls
 ```
+```
+exit
+```
 Cleanup
 ```
 kubectl delete -f hp.yaml
