@@ -131,6 +131,9 @@ kubectl describe pod <pod-name>
 kubectl exec -it multi-ctr-app -c ctr-1 -- /bin/bash
 ```
 ```
+cd /app
+```
+```
 echo "Hello from ctr1" > test
 ```
 ```
@@ -138,6 +141,9 @@ exit
 ```
 ```
 kubectl exec -it multi-ctr-app  -c ctr-2 -- /bin/sh
+```
+```
+cd /data
 ```
 ```
 echo "Hello from ctr2" >> test
