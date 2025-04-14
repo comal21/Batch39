@@ -38,11 +38,15 @@ kubectl apply -f nlns-pod1.yaml
 ```
 kubectl get pods -o wide
 ```
-# Task 3 : Create a pod and use nodeSelestor to constrain it to a particular node
+## Cleanup
+```
+kubectl delete -f nlns-pod1.yaml
+```
+# Task 3 : Create a pod and use nodeSelector to constrain it to a particular node
 ## Create a YAML file named nlns-pod2.yaml with the following content:
 
 ```
-vi nlns-pod1.yaml
+vi nlns-pod2.yaml
 ```
 ```
 apiVersion: v1
@@ -67,6 +71,9 @@ kubectl apply -f nlns-pod2.yaml
 ```
 kubectl get pods -o wide
 ```
-
+## Cleanup
+```
+kubectl delete -f nlns-pod2.yaml
+```
 
 
