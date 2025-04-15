@@ -145,8 +145,23 @@ curl localhost
 ```
 exit
 ```
-
-
+## Cleanup
+```
+kubectl get pv,pvc,pod
+```
+```
+kubectl delete po pv-pod
+```
+```
+kubectl delete pvc pv-claim
+```
+```
+kubectl get pv
+```
+Note: PV is retained due to the reclaim policy
+```
+kubectl delete pv
+```
 
 
 
