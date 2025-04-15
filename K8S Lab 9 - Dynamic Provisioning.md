@@ -75,4 +75,17 @@ kubectl get deploy
 ```
 kubectl get pods
 ```
-
+## Cleanup
+```
+kubectl get pv,pvc,deploy
+```
+```
+kubectl delete deploy ng-deploy
+```
+```
+kubectl delete pvc sc-claim
+```
+```
+ kubectl get deploy,pvc,pv
+```
+Note: PV is deleted along with the pvc due to the reclaim policy
