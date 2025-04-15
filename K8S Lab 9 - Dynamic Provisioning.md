@@ -1,6 +1,6 @@
 ## Creating pvc 
 ```
-vi pv-claim.yaml
+vi dynamic-pv-claim.yaml
 ```
 ```
 kind: PersistentVolumeClaim
@@ -17,7 +17,7 @@ spec:
 ```
 ## apply the above yaml 
 ```
-kubectl apply -f pv-claim.yaml
+kubectl apply -f dynamic-pv-claim.yaml
 ```
 
 ## verify the pv and pvc
