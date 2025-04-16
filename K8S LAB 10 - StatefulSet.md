@@ -8,7 +8,11 @@ Lab 10 - StatefulSet Implementation
 ```
 wget https://s3.ap-south-1.amazonaws.com/files.cloudthat.training/devops/kubernetes-essentials/nginx-sts.yaml
 ```
-
+Open a duplicate tab and run the below command
+## Watch the pods getting created in an ordinal index fashion
+```
+kubectl get pods -w -l app=nginx-sts
+```
 ## Create a Stateful Set and  headless service by applying the yaml
 ```
 kubectl apply -f nginx-sts.yaml
@@ -24,10 +28,6 @@ kubectl get service nginx-svc
 kubectl get statefulset nginx-sts
 ```
 
-## Watch the pods getting created in an ordinal index fashion
-```
-kubectl get pods -w -l app=nginx-sts
-```
 
 ## Go to each of the pods to see the hostname, as a DNS entry is created for each Pod, the hostname inside the Pod should match the pod-name
 ```
