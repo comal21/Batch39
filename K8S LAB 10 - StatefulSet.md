@@ -47,15 +47,14 @@ nslookup nginx-sts-1.nginx-svc
 ```
 exit
 ```
+## In another window notice the new pods getting created in a proper order
+```
+kubectl get pod -w -l app=nginx-sts
+```
 
 ## Delete the pods for stateful set
 ```
 kubectl delete pod -l app=nginx-sts
-```
-
-## In another window notice the new pods getting created in a proper order
-```
-kubectl get pod -w -l app=nginx-sts
 ```
 
 ## Verify the hostname in each of the newly created pods, it will match the pod name
