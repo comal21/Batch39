@@ -82,7 +82,7 @@ kubectl get pvc -l app=nginx-sts
 ```
 ## Edit the stateful Set yam and reduce replicas to 3 
 ```
-kubectl edit sts nginx-sts
+kubectl scale sts nginx-sts --replicas=3
 ```
 ## Notice that the controller deletes the pods one at a time. It waits for one to completely shut down before going to next
 ```
